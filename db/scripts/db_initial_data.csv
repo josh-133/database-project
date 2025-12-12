@@ -1,0 +1,28 @@
+Vehicle,,,,,,,,,,,,,,,,,,,,,
+name,brand,height,max_speed,capabilities,vulnerabilities,,,,,,,,,,,,,,,,
+Corolla,Toyota,1.4,178,"Hybrid, RWD","No towing capacity, Underpowered engine, Low safety rating, Cramped rear seats",,,,,,,,,,,,,,,,
+Rav4,Toyota,1.7,193,"Hybrid, AWD",No towing capacity,,,,,,,,,,,,,,,,
+3 Series,BMW,1.4,209,"Turbo, RWD","High maintenance costs, No towing capacity, Cramped rear seats",,,,,,,,,,,,,,,,
+X5,BMW,1.8,209,"V6, AWD","Poor fuel economy, High maintenance costs, Cramped rear seats",,,,,,,,,,,,,,,,
+Mustang,Ford,1.5,325,"V6, AWD","Poor fuel economy, High maintenance costs, No towing capacity, Low safety rating, Cramped rear seats",,,,,,,,,,,,,,,,
+F-150,Ford,2,193,"V6, FWD",Poor fuel economy,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+Driver,,,,,,,,,,,,,,,,,,,,,
+name,employee_number,employee_start_date,,,,,,,,,,,,,,,,,,,
+Olivia Carter,OC4827,20250105,,,,,,,,,,,,,,,,,,,
+Marcus Flynn,MF1936,20250131,,,,,,,,,,,,,,,,,,,
+Jade Thompson,JT7604,20250206,,,,,,,,,,,,,,,,,,,
+Elias Navarro,EN8451,20250216,,,,,,,,,,,,,,,,,,,
+Priya Singh,PS2379,20250225,,,,,,,,,,,,,,,,,,,
+Leo Bennett,LB5013,20250310,,,,,,,,,,,,,,,,,,,
+Amara Wells,AW3285,20250314,,,,,,,,,,,,,,,,,,,
+Darius Kim,DK1160,20250330,,,,,,,,,,,,,,,,,,,
+Naomi Brooks,NB7728,20250408,,,,,,,,,,,,,,,,,,,
+Felix Romero,FR6924,20250419,,,,,,,,,,,,,,,,,,,
+Patty Peter,PP4545,20250419,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,
+Scenario,,,,,,,,,,,,,,,,,,,,,
+name,description,weather,start_time,car 1,Driver 1,Rego 1,car 2,Driver 2,Rego 2,car 3,Driver 3,Rego 3,car 4,Driver 4,Rego 4,car 5,Driver 5,Rego 5,car 6,Driver 6,Rego 6
+Mission Pizza Delivery,,Raining,8pm,Rav4,Olivia Carter,A7X9B2,3 Series,Marcus Flynn,C9D4F1,Rav4,Jade Thompson,R8H2Z7,Rav4,Elias Navarro,E7Q5U3,Corolla,Priya Singh,W3X2R5,Corolla,Leo Bennett,T1V6J4
+Scenario 4,,Sunny and hot,2pm,3 Series,Amara Wells,C9D4F1,Corolla,Darius Kim,W3X2R5,Corolla,Naomi Brooks,T1V6J4,3 Series,Felix Romero,J4S1C9,3 Series,Olivia Carter,G9D7T1,Rav4,Marcus Flynn,A7X9B2
+Windy drive,,Raining and windy,1pm,F-150,Priya Singh,M2R7T6,F-150,Elias Navarro,L0W3Y6,Mustang,Marcus Flynn,B2M9X0,Mustang,Leo Bennett,F6N0L8,X5,Jade Thompson,H0V4M2,F-150,Olivia Carter,Z3L1Q8
