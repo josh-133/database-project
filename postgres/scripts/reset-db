@@ -1,0 +1,6 @@
+#!/bin/bash
+docker exec -it postgres_db psql -U postgres -d sqldb -c "
+DROP SCHEMA public CASCADE;
+CREATE SCHEMA public;
+"
+docker exec -it postgres_db psql -U postgres -d sqldb -f /docker-entrypoint-initdb.d/01-create-tables.sql

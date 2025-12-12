@@ -1,0 +1,7 @@
+vehicle_id,vehicle_name,brand_id,height,max_speed,capabilities,vulnerabilities
+1,Corolla,1,1.4,178,"Hybrid, RWD","No towing capacity, Underpowered engine, Low safety rating, Cramped rear seats"
+2,Rav4,1,1.7,193,"Hybrid, AWD",No towing capacity
+3,3 Series,2,1.4,209,"Turbo, RWD","High maintenance costs, No towing capacity, Cramped rear seats"
+4,X5,2,1.8,209,"V6, AWD","Poor fuel economy, High maintenance costs, Cramped rear seats"
+5,Mustang,3,1.5,325,"V6, AWD","Poor fuel economy, High maintenance costs, No towing capacity, Low safety rating, Cramped rear seats"
+6,F-150,3,2,193,"V6, FWD",Poor fuel economy

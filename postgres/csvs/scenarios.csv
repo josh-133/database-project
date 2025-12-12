@@ -1,0 +1,4 @@
+scenario_id,scenario_name,scenario_description,predicted_weather,start_time
+1,Mission Pizza Delivery,,Raining,8pm
+2, Windy drive,,Raining and windy,1pm
+3,Scenario 4,,Sunny and hot,2pm

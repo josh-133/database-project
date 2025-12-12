@@ -1,7 +1,7 @@
 CREATE TABLE driver (
     driver_id SERIAL PRIMARY KEY,
     driver_name VARCHAR(100) NOT NULL,
-    employee_number INTEGER UNIQUE NOT NULL,
+    employee_number VARCHAR(100) UNIQUE NOT NULL,
     employee_start_date DATE NOT NULL
 );
 

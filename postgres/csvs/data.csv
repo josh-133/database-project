@@ -1,0 +1,4 @@
+scenario_id,name,description,weather,start_time,car 1,Driver 1,Rego 1,car 2,Driver 2,Rego 2,car 3,Driver 3,Rego 3,car 4,Driver 4,Rego 4,car 5,Driver 5,Rego 5,car 6,Driver 6,Rego 6
+1,Mission Pizza Delivery,,Raining,8pm,Rav4,Olivia Carter,A7X9B2,3 Series,Marcus Flynn,C9D4F1,Rav4,Jade Thompson,R8H2Z7,Rav4,Elias Navarro,E7Q5U3,Corolla,Priya Singh,W3X2R5,Corolla,Leo 2,Bennett,T1V6J4
+2, Windy drive,,Raining and windy,1pm,F-150,Priya Singh,M2R7T6,F-150,Elias Navarro,L0W3Y6,Mustang,Marcus Flynn,B2M9X0,Mustang,Leo Bennett,F6N0L8,X5,Jade Thompson,H0V4M2,F-150,Olivia Carter,Z3L1Q8
+3,Scenario 4,,Sunny and hot,2pm,3 Series,Amara Wells,C9D4F1,Corolla,Darius Kim,W3X2R5,Corolla,Naomi Brooks,T1V6J4,3 Series,Felix Romero,J4S1C9,3 Series,Olivia Carter,G9D7T1,Rav4,Marcus Flynn,A7X9B2

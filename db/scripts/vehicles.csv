@@ -1,8 +1,0 @@
-Vehicle,,,,,,,,,,,,,,,,,,,,,
-name,brand,height,max_speed,capabilities,vulnerabilities,,,,,,,,,,,,,,,,
-Corolla,Toyota,1.4,178,"Hybrid, RWD","No towing capacity, Underpowered engine, Low safety rating, Cramped rear seats",,,,,,,,,,,,,,,,
-Rav4,Toyota,1.7,193,"Hybrid, AWD",No towing capacity,,,,,,,,,,,,,,,,
-3 Series,BMW,1.4,209,"Turbo, RWD","High maintenance costs, No towing capacity, Cramped rear seats",,,,,,,,,,,,,,,,
-X5,BMW,1.8,209,"V6, AWD","Poor fuel economy, High maintenance costs, Cramped rear seats",,,,,,,,,,,,,,,,
-Mustang,Ford,1.5,325,"V6, AWD","Poor fuel economy, High maintenance costs, No towing capacity, Low safety rating, Cramped rear seats",,,,,,,,,,,,,,,,
-F-150,Ford,2,193,"V6, FWD",Poor fuel economy,,,,,,,,,,,,,,,,

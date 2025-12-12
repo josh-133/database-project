@@ -1,0 +1,2 @@
+#!/bin/bash
+docker exec -it postgres_db python3 /postgres/seed.py
