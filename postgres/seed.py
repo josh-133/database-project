@@ -162,6 +162,34 @@ with open("/postgres/csvs/vehicle_instances.csv") as f:
         row["vehicle_id"],
         row["driver_id"]
     ))
+        
+print("🌱 Seeding driver_week_data.csv...")
+        
+with open("/postgres/csvs/driver_week_data.csv") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        week_start_date = datetime.strptime(
+            row["week_start_date"],
+            "%d/%m/%Y"
+        ).date(),
+        cursor.execute("""
+    INSERT INTO driver_week_data
+        (driver_id, scenario_id, week_start_date, mon_km, tue_km, wed_km, thu_km, fri_km, sat_km, sun_km, seatbelt_violations)
+        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        ON CONFLICT DO NOTHING;
+    """, (
+        row["driver_id"], 
+        row["scenario_id"],
+        week_start_date,
+        row["mon_km"], 
+        row["tue_km"], 
+        row["wed_km"], 
+        row["thu_km"], 
+        row["fri_km"], 
+        row["sat_km"], 
+        row["sun_km"], 
+        row["seatbelt_violations"]
+    ))
 
 conn.commit()
 conn.close()

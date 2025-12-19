@@ -18,13 +18,13 @@ CREATE TABLE driver_week_data (
     driver_id INTEGER NOT NULL REFERENCES driver(driver_id) ON DELETE CASCADE,
     scenario_id INTEGER NOT NULL REFERENCES scenario(scenario_id) ON DELETE CASCADE,
     week_start_date DATE NOT NULL,
-    mon_km INTEGER NOT NULL,
-    tue_km INTEGER NOT NULL,
-    wed_km INTEGER NOT NULL,
-    thu_km INTEGER NOT NULL,
-    fri_km INTEGER NOT NULL,
-    sat_km INTEGER NOT NULL,
-    sun_km INTEGER NOT NULL,
+    mon_km NUMERIC(6,2) NOT NULL,
+    tue_km NUMERIC(6,2) NOT NULL,
+    wed_km NUMERIC(6,2) NOT NULL,
+    thu_km NUMERIC(6,2) NOT NULL,
+    fri_km NUMERIC(6,2) NOT NULL,
+    sat_km NUMERIC(6,2) NOT NULL,
+    sun_km NUMERIC(6,2) NOT NULL,
     seatbelt_violations INTEGER NOT NULL
 );
 
