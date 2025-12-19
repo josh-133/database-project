@@ -1,11 +1,6 @@
 from fastapi import FastAPI
+from routers import dwd_routes
 
-app = FastAPI(
-    title="Vehicle Scenario API",
-    version="0.1.0",
-    description="API layer for the SQL project"
-)
+app = FastAPI()
 
-@app.get("/")
-def root():
-    return {"status": "API running"}
+app.include_router(dwd_routes.router)
