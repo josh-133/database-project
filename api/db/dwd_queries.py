@@ -1,4 +1,4 @@
-from connection import get_conn, release_conn
+from db.connection import get_conn, release_conn
 
 def get_driver_week_data():
     conn = get_conn()
@@ -14,10 +14,10 @@ def get_driver_week_data():
 
                     -- foreign key data
                     d.driver_id,
-                    d.name AS driver_name,
+                    d.driver_name,
 
                     s.scenario_id,
-                    s.name AS scenario_name
+                    s.scenario_name
                 FROM driver_week_data dwd
                 JOIN driver d ON dwd.driver_id = d.driver_id
                 JOIN scenario s ON dwd.scenario_id = s.scenario_id
@@ -61,5 +61,66 @@ def create_driver_week_data(data):
             new_id = cur.fetchone()[0]
             conn.commit()
             return new_id
+    finally:
+        release_conn(conn)
+        
+def update_driver_week_data(driver_week_id: int, data):
+    conn = get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                UPDATE  driver_week_data
+                SET
+                    week_start_date = %s,
+                    mon_km = %s,
+                    tue_km = %s,
+                    wed_km = %s,
+                    thu_km = %s,
+                    fri_km = %s,
+                    sat_km = %s,
+                    sun_km = %s,
+                    seatbelt_violations = %s,
+                    driver_id = %s,
+                    scenario_id = %s
+                WHERE driver_week_id = %s
+            """, (
+                data.week_start_date,
+                data.mon_km,
+                data.tue_km,
+                data.wed_km,
+                data.thu_km,
+                data.fri_km,
+                data.sat_km,
+                data.sun_km,
+                data.seatbelt_violations,
+                data.driver_id,
+                data.scenario_id,
+                data.driver_week_id,
+            ))
+
+            if cur.rowcount == 0:
+                return False
+    
+            conn.commit()
+            return True
+            
+    finally:
+        release_conn(conn)
+
+def delete_driver_week_data(driver_week_id: int):
+    conn = get_conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                DELETE FROM driver_week_data
+                WHERE driver_week_id = %s
+            """, (driver_week_id,))
+
+            if cur.rowcount == 0:
+                return False
+    
+            conn.commit()
+            return True
+            
     finally:
         release_conn(conn)

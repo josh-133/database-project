@@ -17,5 +17,20 @@ services:
 
     entrypoint: ["/postgres/entrypoint.sh"]
 
+  api:
+    build: ./api
+    container_name: fastapi_api
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: postgres
+      DB_NAME: sqldb
+      DB_USER: postgres
+      DB_PASSWORD: password
+    volumes:
+      - ./api:/app
+
 volumes:
   postgres_data:

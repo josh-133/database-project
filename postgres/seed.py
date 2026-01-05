@@ -25,11 +25,10 @@ with open("/postgres/csvs/scenarios.csv") as f:
         parsed_time = parse_time(row["start_time"])
         
         cursor.execute("""
-            INSERT INTO scenario (scenario_id, scenario_name, scenario_description, predicted_weather, start_time)
-            VALUES (%s, %s, %s, %s, %s)
+            INSERT INTO scenario (scenario_name, scenario_description, predicted_weather, start_time)
+            VALUES (%s, %s, %s, %s)
             ON CONFLICT DO NOTHING;
         """, (
-            row["scenario_id"], 
             row["scenario_name"], 
             row["scenario_description"], 
             row["predicted_weather"],
@@ -43,11 +42,10 @@ with open("/postgres/csvs/drivers.csv") as f:
     print("CSV headers:", reader.fieldnames) 
     for row in reader:
         cursor.execute("""
-            INSERT INTO driver (driver_id, driver_name, employee_number, employee_start_date)
-            VALUES (%s, %s, %s, %s)
+            INSERT INTO driver (driver_name, employee_number, employee_start_date)
+            VALUES (%s, %s, %s)
             ON CONFLICT DO NOTHING;
         """, (
-            row["driver_id"], 
             row["driver_name"], 
             row["employee_number"], 
             row["employee_start_date"]
